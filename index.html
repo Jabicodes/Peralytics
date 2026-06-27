@@ -800,40 +800,8 @@
   </div><!-- .main -->
 </div><!-- .layout -->
 
-<!-- Mobile Floating Bottom Nav -->
-<nav class="mobile-bottom-nav">
-  <button class="mobile-nav-btn" data-tab="overview" onclick="switchTab('overview')" ontouchend="event.preventDefault();switchTab('overview')">
-    <i class="ti ti-layout-dashboard"></i>
-    <span>Overview</span>
-  </button>
-  <button class="mobile-nav-btn" data-tab="expenses" onclick="switchTab('expenses')" ontouchend="event.preventDefault();switchTab('expenses')">
-    <i class="ti ti-arrow-up-circle"></i>
-    <span>Expenses</span>
-  </button>
-  <button class="mobile-nav-btn" data-tab="wallet" onclick="switchTab('wallet')" ontouchend="event.preventDefault();switchTab('wallet')">
-    <i class="ti ti-wallet"></i>
-    <span>Wallet</span>
-  </button>
-  <button class="mobile-nav-btn" data-tab="arcade" onclick="switchTab('arcade')" ontouchend="event.preventDefault();switchTab('arcade')">
-    <i class="ti ti-device-gamepad-2"></i>
-    <span>Arcade</span>
-  </button>
-  <button class="mobile-nav-btn" data-tab="tools" onclick="switchTab('tools')" ontouchend="event.preventDefault();switchTab('tools')">
-    <i class="ti ti-tools"></i>
-    <span>Tools</span>
-  </button>
-</nav>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="app.js"></script>
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(reg => console.log('ServiceWorker registration successful with scope: ', reg.scope))
-      .catch(err => console.error('ServiceWorker registration failed: ', err));
-  });
-}
-</script>
 </body>
 </html>
